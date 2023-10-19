@@ -23,3 +23,28 @@
 #checker-box > span:nth-child(even) {
 	background-color: white;
 }
+
+@media (max-width: 520px) {
+
+	#checker-box {
+		width: 250px;
+		height: 250px;
+	}
+
+	#checker-box > span {
+		width: 50px;
+		height: 50px;
+	}
+}
+@media (max-width: 270px) {
+
+	#checker-box {
+		width: 125px;
+		height: 125px;
+	}
+
+	#checker-box > span {
+		width: 25px;
+		height: 25px;
+	}
+}
