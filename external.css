@@ -6,6 +6,13 @@
 	justify-content: center;
 }
 
+#within-art {
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	gap: 0px;
+}
+
 #checker-box {
 	display: flex;
 	flex-wrap: wrap;
@@ -25,6 +32,22 @@
 	background-color: white;
 }
 
+.circle {
+	width: 2em;
+	height: 2em;
+	outline: 2px solid black;
+	border-radius: 50%;
+	margin: 0px -0.25em 0px 0px;
+}
+.above {
+	background-color: pink;
+	z-index: 2;
+}
+.below {
+	background-color: indigo;
+	z-index: 1;
+}
+
 @media (max-width: 650px) {
 
 	#checker-box {
@@ -35,6 +58,11 @@
 	#checker-box > span {
 		width: 50px;
 		height: 50px;
+	}
+
+	.circle {
+		width: 1em;
+		height: 1em;
 	}
 }
 @media (max-width: 350px) {
@@ -47,6 +75,11 @@
 	#checker-box > span {
 		width: 25px;
 		height: 25px;
+	}
+
+	.circle {
+		width: 0.5em;
+		height: 0.5em;
 	}
 }
 
@@ -61,20 +94,6 @@
 
 	font-size: 120%;
 	gap: 1.5em;
-}
-
-#within-art {
-	position: absolute;
-	z-index: 2;
-}
-
-.circle {
-	width: 2em;
-	height: 2em;
-	background-color: pink;
-	outline: 2px solid black;
-	border-radius: 50%;
-	z-index: 2;
 }
 
 body {
