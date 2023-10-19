@@ -1,0 +1,25 @@
+#art-container {
+	width: 100%;
+	height: 80%;
+
+	display: flex;
+	justify-content: center;
+}
+
+#checker-box {
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 500px;
+	height: 500px;
+}
+
+#checker-box > span {
+	display: block;
+	background-color: black;
+	width: 100px;
+	height: 100px;
+}
+#checker-box > span:nth-child(even) {
+	background-color: white;
+}
